@@ -1,42 +1,137 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0 auto;
-    text-transform:uppercase;
-    text-decoration:none;
+    text-transform: uppercase;
+    text-decoration: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-nav{
-    background:rgba(0,0,0,.5);
+
+nav {
+    background: rgb(0, 0, 0);
     width: 100%;
     display: table;
     height: auto;
 }
-.logo{
-    text-align: center;
-    font-size:2em;
-    width: 100%;
-    padding: 5px 0;
-    display: table;
-    color:#f7f7f7;
-}
-.wrap{
+
+.wrap {
     width: 90%;
     display: flex;
-    overflow:hidden;
+    overflow: hidden;
     flex-wrap: wrap;
 }
-.menu{
+
+.menu {
     width: 100%;
     height: auto;
     display: table;
     text-align: center;
     padding: 10px 0;
 }
-.menu a{
-    font-size: 1.5em;
+
+.menu a,
+.lg {
+    font-size: 1.2em;
     letter-spacing: -2px;
     color: #f7f7f7;
     width: 100%;
-    padding:0 30px;
+    transition: .3s;
+    padding: 0 30px;
+}
+.welcome .lg{
+    padding:0;
+}
+.logo {
+    text-align: center;
+    font-size: 1.7em;
+    width: 100%;
+    padding: 5px 0;
+    display: table;
+    color: #f7f7f7;
+    transform: none;
+}
+
+.menu a:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 231);
+    transition: .3s;
+}
+
+.lg:hover {
+    color: grey;
+    transition: .3s;
+}
+
+.portada {
+    background-image: url('../img/a.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+
+.contactar {
+    width: 60%;
+}
+
+.datos,
+.contactar label {
+    width: 100%;
+    padding: 7px 0;
+    display: table;
+}
+
+.btSend {
+    margin: 10px 0;
+    padding: 10px;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.welcome {
+    color: white;
+    width: 90%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 4em;
+    margin-top: 300px;
+}
+.seccion{
+    padding: 5vh 0;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    overflow: hidden;
+}
+.a {
+    text-align: right;
+}
+.seccion img{
+    width: 100%;
+    height: 300px;
+}
+.foto, .contenido{
+    width: 50%;
+    padding: 0 10px;
+}
+.contenido h1{
+    margin-bottom: 25px;
+}
+.secciones{
+    background-image: url('../img/aa.jpeg');
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode:saturation;
+    width:100%;
+    color: white;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.welcome .lg:hover{
+    color: #f7f7f7;
+    text-shadow: 0 0 10px white;
+    transition: .3s;
 }

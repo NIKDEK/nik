@@ -1,22 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="portada">
+        <div class="welcome">
+            <p id="sw">
+                welcome to
+                <a href="#" class="lg">nikdek</a>
+            </p>
+        </div>
+    </div>
     <nav>
         <div class="wrap">
-            <div class="logo">GIT TEST</div>
+            <div class="logo">
+                <a href="#" class="lg">nikdek</a>
+            </div>
             <div class="menu">
                 <a href="#">inicio</a>
-                <a href="#">info</a>
+                <a href="#">informacion</a>
                 <a href="#" class="s">contactos</a>
             </div>
         </div>
     </nav>
+    <div class="secciones">
+        <div class="seccion">
+            <div class="foto">
+                <img src="img/a.jpeg" alt="">
+            </div>
+            <div class="contenido">
+                <h1>Lorem ipsum dolor sit.</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa sint sit atque. Vel ratione quod at repellat distinctio
+                unde, tempore possimus ea illum quo totam voluptate. Debitis, adipisci ratione.
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="contenido a">
+                <h1>Lorem ipsum dolor sit.</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa sint sit atque. Vel ratione quod at repellat distinctio
+                unde, tempore possimus ea illum quo totam voluptate. Debitis, adipisci ratione.
+            </div>
+            <div class="foto">
+                <img src="img/a.jpeg" alt="">
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="foto">
+                <img src="img/a.jpeg" alt="">
+            </div>
+            <div class="contenido">
+                <h1>Lorem ipsum dolor sit.</h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ipsa sint sit atque. Vel ratione quod at repellat distinctio
+                unde, tempore possimus ea illum quo totam voluptate. Debitis, adipisci ratione.
+            </div>
+        </div>
+    </div>
+    <div class="contactos">
+        <div class="wrap">
+            <form action="" class="contactar">
+                <label>
+                    como te llamas
+                </label>
+                <input type="text" name="" id="" class="datos">
+                <label for="">
+                    aqui tu email
+                </label>
+                <input type="text" name="" id="" class="datos">
+                <label for="">
+                    cuentanos
+                </label>
+                <textarea name="" id="" cols="30" rows="10" class="datos"></textarea>
+                <input type="submit" value="enviar" class="btSend">
+            </form>
+        </div>
+    </div>
 </body>
+<script>
+    var anm = document.getElementById('sw');
+
+    function adc() {
+        if (anm.className == 'swing') {
+            anm.className = "";
+        }
+        anm.className = 'swing';
+    }
+    anm.addEventListener('click', adc);
+</script>
+
 </html>
